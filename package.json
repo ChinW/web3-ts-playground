@@ -1,0 +1,25 @@
+{
+  "name": "web3-pg",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "dev": "webpack --watch",
+    "build": "webpack",
+    "m:apollo": "nodemon --exec \"node -harmony\" --watch ./build/apollo.js build/apollo.js --env dev"
+  },
+  "devDependencies": {
+    "@swc/core": "^1.2.206",
+    "@types/lodash": "^4.14.182",
+    "esbuild-loader": "^2.19.0",
+    "swc-loader": "^0.2.3",
+    "webpack": "^5.73.0",
+    "webpack-cli": "^4.10.0"
+  },
+  "dependencies": {
+    "lodash": "^4.17.21",
+    "pino": "^8.1.0",
+    "pino-pretty": "^8.1.0",
+    "web3": "^1.7.4"
+  }
+}
